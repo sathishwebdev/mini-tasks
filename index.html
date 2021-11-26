@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI TASKS - HTML</title>
+    <style>
+        body{
+            width:90%;
+            max-width:600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3%;
+        }
+        .code{
+            padding: 2%;
+            margin: 3%;
+            border: 1px solid black;
+        }
+        input, textarea{
+            width:100%;
+            margin-bottom: 2%;
+            margin-top: 2%;
+        }
+        input{
+            height: 30px;
+        }
+        input[type=radio],input[type=checkbox]{
+            width:unset;
+            height: unset;
+        }
+        .card-input{
+            width: 50%;
+            margin: 4px; 
+            border:  none; 
+            border-bottom: 1px solid black; 
+            box-shadow: none;
+        }
+        .card-input:focus, .card-input:active {
+            outline: none;
+            box-shadow: none;
+            box-sizing: none;
+        }
+        th, td{
+            border: 1px solid;
+            align-items:center;
+            text-align: center;
+            padding:15px;
+        }
+        table{
+            align-items: center;
+            border: 2px black solid;
+            color: rgb(22, 22, 22);
+            border-collapse: collapse; 
+            width: 100%;
+        }
+        td{
+            color: rgb(54, 54, 54);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>Question 1</h2>
+</div>
+<div class="code">
+    
+            <code>
+                <div>&#60;html lang="en"&#62;</div>
+                 <div>&#60;head&#62;</div>
+                 <div>&#60;title&#62;Document guvi &#60;/title&#62; </div>
+                 <div>&#60;/head&#62; </div>
+                 &#60;body&#62;
+                 <div>
+                     &#60;div&#62; Lorem ipsum dolor sit amet consectetur adipisicing elit. &#60;/div&#62;
+                     &#60;div&#62; Guvi Geek Network &#60;/div&#62;
+                 </div>
+                 &#60;/body&#62;
+                 <div>&#60;/html&#62;</div>
+    
+            </code>
+</div>
+<div>
+    <h2>Question 2</h2>
+</div>
+    <div class="code">
+        <code>
+            <div>&#60;html lang="en"&#62;</div> 
+            &#60;head&#62; <div>&#60;title&#62;Document  guvi &#60;/title&#62;</div> &#60;/head&#62;
+            <div>&#60;body&#62; </div>
+            <div>&#60;div&#62; Lorem ipsum dolor sit amet consectetur adipisicing elit. &#60;/div&#62; </div>
+               <div>&#60;div&#62; Guvi Geek Network &#60;/div&#62;</div> 
+            <div>&#60;/body&#62;</div>
+            &#60;/html&#62;
+        </code>
+    </div>
+    <div>
+        <h2>Question 3</h2>
+        <p>Design a contact form</p>
+    </div>
+    <div class="code">
+        <form>
+            <input type="text" name="Name" id="name" placeholder="Name"  required/>
+            <input type="text" name="email" id="email" placeholder="Email" required/>
+            <textarea name="description" id="description" placeholder="description"  rows="10"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div>
+        <h2>Question 4</h2>
+        <p>Design a List</p>
+    </div>
+    <div class="code">
+        <ul>
+            <li>Programming Language
+                <ul>
+                    <li>JavaScript
+                        <ul style="list-style-type: lower-alpha;">
+                            <li>Angular</li>
+                            <li>React</li>
+                            <li>Vue.js</li>
+                        </ul>
+                    </li>
+                    <li>Python
+                        <ul style="list-style-type: lower-alpha;">
+                            <li>Django Framework</li>
+                            <li>Flask Framework</li>
+                        </ul>
+                    </li>
+                    <li>Java
+                        <ul style="list-style-type: lower-alpha;">
+                            <li>Spring</li>
+                            <li>Maven</li>
+                            <li>Hibernate</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Database
+                <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Cansandra</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Question 5</h2>
+        <p>Create an element that helps you to open the https://google.com in separate new tab.</p>
+    </div>
+    <div class="code" style="text-align: center;">
+        <a target="_blank" href="https://google.com"  >Google</a>
+    </div>
+    <div>
+        <h2>Question 6</h2>
+        <p>In the form, add two radio buttons with grouping them for employee type(Salaried and own business)</p>
+    </div>
+    <div class="code">
+        <form>
+            <input type="text" name="Name" id="name" placeholder="Name"  required/>
+            <input type="text" name="email" id="email" placeholder="Email" required/>
+            <div class="code">
+                <input  type="radio" value="salaried" id="typeOfEmp" name="typeOfEmp"/>
+                <label for="typeOfEmp">Salaried</label>
+
+                <input  type="radio" value="Own business" id="typeOfEmp" name="typeOfEmp"/>
+                <label for="typeOfEmp">Own business</label>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div>
+        <h2>Question 7</h2>
+        <p>Design form</p>
+    </div>
+    <div class="code" style="padding: 8px; margin: 2px; border: 5px solid black ;">
+        <div style="background-color: red; color: white; text-align: center;">
+            <h1>Yes! I want to subscribe to Mag-O-Zine</h1>
+        </div>
+        <div style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        ">
+        <input class="card-input" type="text" name="FirstName" id="Firstname" placeholder="First Name"  required/>
+        <input class="card-input" type="text" name="FirstName" id="Lastname" placeholder="Last Name"  required/>
+        </div>
+        <!-- address - street name -->
+        <input class="card-input" style="width: 98%;" type="text" name="Address" id="Address" placeholder="Street Name"  required/>
+        <!-- address - others -->
+        <div style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        ">
+        <input class="card-input" style="width:30%" type="text" name="city" id="city" placeholder="city Name"  required/>
+        <input class="card-input" style="width:30%" type="text" name="state" id="state" placeholder="state Name"  required/>
+        <input class="card-input" style="width:30%" type="text" pattern="[0-9]{6}" name="pin" id="pin" placeholder="Pin code" maxlength="6" required/>
+        </div>
+        <!-- subcribtiob options  -->
+        <div style="
+            display: flex;
+            align-items: center;
+        ">
+            <h3>Subscribe for: </h3>
+            <input  type="radio" value="1year" id="typeOfSubcription" name="typeOfSubcription"/>
+            <label for="typeOfEmp">1 Year ($19.95) </label>
+
+            <input  type="radio" value="2years" id="typeOfSubcription" name="typeOfSubcription"/>
+            <label for="typeOfEmp"> 2 Years ($35.00)</label>
+        </div>
+        <!-- sending infos -->
+        <div>
+            <h3>Send me more information about: </h3>
+            <div style="
+                margin-left: 18px;
+            ">
+                <div>
+                    <input  type="checkbox" value="computer-zine" id="computer-zine" name="computer-zine"/>
+                    <label for="computer-zine">computer-zine</label>
+                </div>
+                <div>
+                    <input  type="checkbox" value="Fishing-Zine" id="Fishing-Zine" name="Fishing-Zine"/>
+                    <label for="Fishing-Zine">Fishing-Zine</label>
+                </div>
+                <div>
+                    <input  type="checkbox" value="Cat-O-Zine" id="Cat-O-Zine" name="Cat-O-Zine"/>
+                    <label for="Cat-O-Zine">Cat-O-Zine</label>
+                </div>
+            </div>
+
+        </div>
+        </form>
+    </div>
+
+    <!-- design table -->
+    <div>
+        <h2>Question 8</h2>
+        <p>Design a Table</p>
+    </div>
+
+    <div class="code" >
+        <h2 style="text-align:center">Health Chart</h2>
+        <table> 
+            <!--merging 2 cells -->
+            <thead>
+               <tr> 
+                   <th rowspan="2">State of Health</th>
+                   <th colspan="2">Fasting value</th>
+                    <th>After Eating</th>
+                  
+                </tr>
+                <tr>
+                    <th>Minimum</th>
+                    <th>Maximum</th>
+                    <th>2 hours after eating</th>
+                    </th>
+                </tr>
+            </thead>          
+            <tbody>
+                <tr>
+                    <td>Healthy</td>
+                    <td>70</td>
+                    <td>100</td>
+                    <td>Less than 140</td>
+                </tr>
+                <tr>
+                    <td>Pre-Diabetes</td>
+                    <td>101</td>
+                    <td>126</td>
+                    <td>140-200</td>
+                </tr>
+                <tr>
+                    <td>Diabetes</td>
+                    <td>More than 126</td>
+                    <td>N A</td>
+                    <td>More than 200</td>
+                </tr>
+            </tbody>  
+        </table>
+    </div>
+
+    <!-- form with default value -->
+
+    <div>
+        <h2>Question 9</h2>
+        <p>Design a form with default value</p>
+    </div>
+    <div class="code">
+        <form>
+            <input class="card-input" style="width: 98%;" type="text" name="Address" id="Address" placeholder="Street, Town Name" value="Duraisamypuram, Sayalgudi"  required/>
+            
+            <div style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            ">
+            <input class="card-input" style="width:30%" type="text" name="city" id="city" placeholder="city Name" value="Ramanathapuram" required/>
+            <input class="card-input" style="width:30%" type="text" name="state" id="state" placeholder="state Name" value="Tamil Nadu" required/>
+            <input class="card-input" style="width:30%" type="text" pattern="[0-9]{6}" name="pin" id="pin" placeholder="Pin code" value="623120" maxlength="6" required/>
+            </div>
+        </form>
+    </div>
+
+    <!-- Highlight a word without css -->
+    <div>
+        <h2>Question 10 </h2>
+        <p>Highlight without using any CSS</p>
+    </div>
+    <div class="code">
+        <li><mark>"HTML & CSS is awesome"</mark></li>
+    </div>
+
+    <div>
+        <h2>Question 11</h2>
+        <p>all types of input elements</p>
+    </div>
+    <div class="code">
+        <form>
+            <input type="checkbox" name="checkbox" id="checkbox" value="checkbox"/>
+            <label for="checkbox"> checkbox </label>
+            <input type="button" name="button" id="button" value="button" />
+            <input type="color" name="color" id="color"/>
+            <input type="date" name="date" id="date" />
+            <input type="datetime" name="datetime" id="datetime" placeholder="datetime" />
+            <input type="datetime-local" name="datetime-local" id="datetime-local" />
+            <input type="email" name="email"  id="email" placeholder="email" />
+            <input type="file" name="file" id="file"/>
+            <input type="hidden" name="hidden" name="hidden"/>
+            <input type="image" style="height: 200px; width: 200px;" title="image input- graphical submit button" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsfxjf0kCo_p_61FfxTVltueocf6rErzr0cQ&usqp=CAU" alt="image">
+            <input type="month" name="month" id="month" />
+            <input type="number" name="number" id="number" placeholder="number" />
+            <input type="password" name="password id="password placeholder="password"/>
+            <input type="radio" name="radio" id="radio" />
+            <label for="radio" >radio</label>
+            <input type="range" name="range" id="range" />
+            <input type="reset" value="reset" />
+            <input type="search" name="search" id="search" placeholder="search" />
+            <input type="submit" value="Submit" />
+            <input type="tel" name="tel" id="tel" placeholder="tel"/>
+            <input type="text" name="text" id="text" placeholder="text"/>
+            <input type="time" name="time" id="time" />
+            <input type="url" name="url" id="url" placeholder="url" />
+            <input type="week" name="week" id="week"/>
+
+        </form>
+    </div>
+</body>
+</html>
